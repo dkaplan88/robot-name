@@ -6,7 +6,7 @@ class Robot
   end
 
   def reset
-    @name = generate_name
+    initialize
   end
 
   private
