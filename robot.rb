@@ -12,8 +12,14 @@ class Robot
   private
 
     def generate_name
-      letters = (:A..:Z).to_a.sample(2).join
-      numbers = (1..9).to_a.sample(3).join
-      letters + numbers
+      random_letters + random_numbers
+    end
+
+    def random_numbers
+      rand(100..999).to_s
+    end
+
+    def random_letters
+      (:A..:Z).to_a.sample(2).join
     end
 end
